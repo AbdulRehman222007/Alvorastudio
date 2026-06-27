@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
-import swrvDesktop from "@/assets/work-swrv.png";
-import championDesktop from "@/assets/work-champion.png";
+import swrvDesktop from "@/assets/work-swrv-desktop.png";
+import championDesktop from "@/assets/work-champion-desktop.png";
 import swrvMobile from "@/assets/work-swrv-mobile.png";
 import championMobile from "@/assets/work-champion-mobile.png";
 
