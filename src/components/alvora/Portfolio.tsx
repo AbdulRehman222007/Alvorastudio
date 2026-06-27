@@ -1,8 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
-import swrvDesktop from "@/assets/work-swrv.png.asset.json";
-import championDesktop from "@/assets/work-champion.png.asset.json";
-import swrvMobile from "@/assets/work-swrv-mobile.png.asset.json";
-import championMobile from "@/assets/work-champion-mobile.png.asset.json";
+import swrvDesktop from "@/assets/work-swrv.png";
+import championDesktop from "@/assets/work-champion.png";
+import swrvMobile from "@/assets/work-swrv-mobile.png";
+import championMobile from "@/assets/work-champion-mobile.png";
 
 const projects = [
   {
