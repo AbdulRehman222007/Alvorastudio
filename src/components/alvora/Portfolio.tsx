@@ -8,18 +8,17 @@ const projects = [
   {
     name: "SWRV Attire",
     tag: "Fashion · E-commerce · Brand",
-    blurb:
-      "A streetwear label elevated through thoughtful branding and a modern Wordpress experience.",
-    desktop: swrvDesktop.url,
-    mobile: swrvMobile.url,
+    blurb:"A streetwear label elevated through thoughtful branding and a modern Wordpress experience.",
+    desktop: swrvDesktop,
+    mobile: swrvMobile,
     href: "https://swrvattire.com",
   },
   {
     name: "Champion Shoes",
     tag: "Footwear · Digital Commerce", 
     blurb: "A refined footwear brand with a high-performing Shopify experience designed to drive engagement and sales.",
-    desktop: championDesktop.url,
-    mobile: championMobile.url,
+    desktop: championDesktop,
+    mobile: championMobile,
     href: "https://championshoes.pk",
   },
 ];
