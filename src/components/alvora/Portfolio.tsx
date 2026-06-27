@@ -7,7 +7,7 @@ import championMobile from "@/assets/work-champion-mobile.png.asset.json";
 const projects = [
   {
     name: "SWRV Attire",
-    tag: "Fashion · E-commerce · Brand"
+    tag: "Fashion · E-commerce · Brand",
     blurb:
       "A streetwear label elevated through thoughtful branding and a modern Wordpress experience.",
     desktop: swrvDesktop.url,
