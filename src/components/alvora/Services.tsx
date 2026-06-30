@@ -18,8 +18,8 @@ const items = [
   },
   {
     icon: Monitor,
-    title: "Meta Performance Ads",
-    body: "Strategic Meta campaigns optimized to drive qualified leads, conversions, and measurable growth.",
+    title: "UGC Content & AI-Powered Content",
+    body: "Bridging authentic human experiences with intelligent automation to power your brand's story.",
   },
 ];
 
