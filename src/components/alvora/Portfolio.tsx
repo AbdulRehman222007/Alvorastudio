@@ -10,14 +10,14 @@ const projects = [
   {
     name: "SWRV Attire",
     tag: "Fashion · E-commerce · Brand",
-    blurb:"A streetwear label elevated through thoughtful branding and a modern Wordpress experience.",
+    blurb: "A streetwear label elevated through thoughtful branding and a modern Wordpress experience.",
     desktop: swrvDesktop,
     mobile: swrvMobile,
     href: "https://swrvattire.com",
   },
   {
     name: "Champion Shoes",
-    tag: "Footwear · Digital Commerce", 
+    tag: "Footwear · Digital Commerce",
     blurb: "A refined footwear brand with a high-performing Shopify experience designed to drive engagement and sales.",
     desktop: championDesktop,
     mobile: championMobile,
@@ -33,7 +33,6 @@ const socialStats = [
 function DeviceMockup({ desktop, mobile, alt }: { desktop: string; mobile: string; alt: string }) {
   return (
     <div className="relative w-full aspect-[5/4] bg-gradient-to-br from-neutral-100 to-neutral-200 overflow-hidden">
-      {/* Desktop frame */}
       <div className="absolute inset-0 flex items-center justify-center p-6 sm:p-10">
         <div className="relative w-[88%] rounded-xl overflow-hidden border border-neutral-300 shadow-2xl bg-white">
           <div className="flex items-center gap-1.5 px-3 py-2 bg-neutral-100 border-b border-neutral-200">
@@ -49,7 +48,6 @@ function DeviceMockup({ desktop, mobile, alt }: { desktop: string; mobile: strin
           />
         </div>
       </div>
-      {/* Phone frame */}
       <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 w-[26%] max-w-[140px] aspect-[9/19] rounded-[1.5rem] border-[6px] border-neutral-900 bg-neutral-900 shadow-2xl overflow-hidden">
         <img
           src={mobile}
@@ -74,7 +72,7 @@ export function Portfolio() {
             </h2>
           </div>
           <p className="max-w-md text-neutral-600">
-            Two recent launches both shipped end-to-end from brand to storefront.
+            Two recent launches — both shipped end-to-end from brand to storefront.
           </p>
         </div>
 
@@ -87,7 +85,7 @@ export function Portfolio() {
               rel="noopener noreferrer"
               className="group block rounded-3xl overflow-hidden bg-white border border-neutral-200/80 hover:border-neutral-300 transition-all hover:-translate-y-1 hover:shadow-xl"
             >
-              <DeviceMockup desktop={swrvIgDesktop} mobile={swrvIgMobile} alt="SWRV Instagram"/>
+              <DeviceMockup desktop={p.desktop} mobile={p.mobile} alt={p.name} />
               <div className="p-8 flex items-start justify-between gap-6">
                 <div>
                   <p className="text-xs uppercase tracking-[0.2em] text-neutral-500">{p.tag}</p>
@@ -100,7 +98,6 @@ export function Portfolio() {
           ))}
         </div>
 
-        {/* Social Media Management Showcase */}
         <div className="mt-20">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
             <div>
@@ -110,33 +107,18 @@ export function Portfolio() {
               </h2>
             </div>
             <p className="max-w-md text-neutral-600">
-              End-to-end social media management strategy, content creation, and community building.
+              End-to-end social media management — strategy, content creation, and community building.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            {/* Main social card */}
             <a
               href="https://instagram.com/swrv.pk"
               target="_blank"
               rel="noopener noreferrer"
               className="lg:col-span-8 group block rounded-3xl overflow-hidden bg-white border border-neutral-200/80 hover:border-neutral-300 transition-all hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="relative w-full aspect-[16/9] bg-neutral-100 overflow-hidden">
-                {/* Browser chrome */}
-                <div className="absolute top-0 left-0 right-0 flex items-center gap-1.5 px-3 py-2 bg-neutral-100 border-b border-neutral-200 z-10">
-                  <span className="h-2.5 w-2.5 rounded-full bg-red-400/80" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-green-400/80" />
-                  <span className="ml-3 text-[10px] text-neutral-400 font-mono">instagram.com/swrv.pk</span>
-                </div>
-                {/* <div className="w-full h-full bg-gradient-to-br from-neutral-200 to-neutral-300 flex items-center justify-center pt-9">
-                  <span className="text-neutral-400 text-sm">Add screenshot: swrv-instagram-profile.png</span></div>*/}
-<DeviceMockup 
-  desktop={swrvIgDesktop} 
-  mobile={swrvIgMobile} 
-  alt="SWRV Instagram" 
-/>
+              <DeviceMockup desktop={swrvIgDesktop} mobile={swrvIgMobile} alt="SWRV Instagram" />
               <div className="p-8 flex items-start justify-between gap-6">
                 <div>
                   <div className="flex items-center gap-3">
@@ -148,14 +130,13 @@ export function Portfolio() {
                   </div>
                   <h3 className="mt-3 font-playfair text-3xl">SWRV Attire Social</h3>
                   <p className="mt-3 text-neutral-600 max-w-lg">
-                    Complete social media management for SWRV Attire from content strategy and visual direction to daily posting and community engagement. Built a cohesive brand voice that resonates with the streetwear audience.
+                    Complete social media management for SWRV Attire — from content strategy and visual direction to daily posting and community engagement. Built a cohesive brand voice that resonates with the streetwear audience.
                   </p>
                 </div>
                 <ArrowUpRight className="h-6 w-6 shrink-0 text-neutral-900 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               </div>
             </a>
 
-            {/* Stats sidebar */}
             <div className="lg:col-span-4 flex flex-col gap-6">
               {socialStats.map((stat) => (
                 <div
@@ -166,8 +147,7 @@ export function Portfolio() {
                   <p className="mt-2 font-playfair text-4xl md:text-5xl text-neutral-900">{stat.value}</p>
                 </div>
               ))}
-              
-              {/* CTA card */}
+
               <a
                 href="https://instagram.com/swrv.pk"
                 target="_blank"
