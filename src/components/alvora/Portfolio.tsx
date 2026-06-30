@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Instagram } from "lucide-react";
 import swrvDesktop from "@/assets/work-swrv-desktop.png";
 import championDesktop from "@/assets/work-champion-desktop.png";
 import swrvMobile from "@/assets/work-swrv-mobile.png";
@@ -21,6 +21,12 @@ const projects = [
     mobile: championMobile,
     href: "https://championshoes.pk",
   },
+];
+
+const socialStats = [
+  { label: "Followers", value: "12.4K" },
+  { label: "Avg. Engagement", value: "8.2%" },
+  { label: "Monthly Reach", value: "85K+" },
 ];
 
 function DeviceMockup({ desktop, mobile, alt }: { desktop: string; mobile: string; alt: string }) {
@@ -91,6 +97,92 @@ export function Portfolio() {
               </div>
             </a>
           ))}
+        </div>
+
+        {/* Social Media Management Showcase */}
+        <div className="mt-20">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+            <div>
+              <p className="text-xs uppercase tracking-[0.3em] text-neutral-500">Social Media</p>
+              <h2 className="mt-4 font-playfair text-4xl md:text-5xl leading-tight">
+                Content we <span className="italic">grew.</span>
+              </h2>
+            </div>
+            <p className="max-w-md text-neutral-600">
+              End-to-end social media management — strategy, content creation, and community building.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            {/* Main social card */}
+            <a
+              href="https://instagram.com/swrv.pk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="lg:col-span-8 group block rounded-3xl overflow-hidden bg-white border border-neutral-200/80 hover:border-neutral-300 transition-all hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div className="relative w-full aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 overflow-hidden">
+                {/* Instagram feed mockup */}
+                <div className="absolute inset-0 flex items-center justify-center p-8">
+                  <div className="w-full max-w-2xl grid grid-cols-3 gap-2">
+                    {[1, 2, 3, 4, 5, 6].map((i) => (
+                      <div key={i} className="aspect-square bg-neutral-300/50 rounded-lg overflow-hidden">
+                        <div className="w-full h-full bg-gradient-to-br from-neutral-200 to-neutral-300" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                {/* Floating phone preview */}
+                <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 w-[18%] max-w-[120px] aspect-[9/19] rounded-[1.5rem] border-[6px] border-neutral-900 bg-neutral-900 shadow-2xl overflow-hidden">
+                  <div className="w-full h-full bg-gradient-to-b from-neutral-800 to-neutral-900 flex items-center justify-center">
+                    <Instagram className="h-8 w-8 text-white/80" />
+                  </div>
+                </div>
+              </div>
+              <div className="p-8 flex items-start justify-between gap-6">
+                <div>
+                  <div className="flex items-center gap-3">
+                    <p className="text-xs uppercase tracking-[0.2em] text-neutral-500">Instagram Management</p>
+                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-neutral-100 text-xs text-neutral-600 font-medium">
+                      <Instagram className="h-3 w-3" />
+                      @swrv.pk
+                    </span>
+                  </div>
+                  <h3 className="mt-3 font-playfair text-3xl">SWRV Attire Social</h3>
+                  <p className="mt-3 text-neutral-600 max-w-lg">
+                    Complete social media management for SWRV Attire — from content strategy and visual direction to daily posting and community engagement. Built a cohesive brand voice that resonates with the streetwear audience.
+                  </p>
+                </div>
+                <ArrowUpRight className="h-6 w-6 shrink-0 text-neutral-900 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              </div>
+            </a>
+
+            {/* Stats sidebar */}
+            <div className="lg:col-span-4 flex flex-col gap-6">
+              {socialStats.map((stat) => (
+                <div
+                  key={stat.label}
+                  className="flex-1 rounded-3xl bg-white border border-neutral-200/80 p-8 flex flex-col justify-center hover:border-neutral-300 transition-all"
+                >
+                  <p className="text-xs uppercase tracking-[0.2em] text-neutral-500">{stat.label}</p>
+                  <p className="mt-2 font-playfair text-4xl md:text-5xl text-neutral-900">{stat.value}</p>
+                </div>
+              ))}
+              
+              {/* CTA card */}
+              <a
+                href="https://instagram.com/swrv.pk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group rounded-3xl bg-neutral-900 text-white p-8 flex flex-col justify-center hover:bg-neutral-800 transition-colors"
+              >
+                <Instagram className="h-8 w-8 mb-4 text-neutral-400 group-hover:text-white transition-colors" />
+                <p className="text-xs uppercase tracking-[0.2em] text-neutral-400">View the feed</p>
+                <p className="mt-2 font-playfair text-2xl">@swrv.pk</p>
+                <ArrowUpRight className="h-5 w-5 mt-4 text-neutral-500 group-hover:text-white transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
