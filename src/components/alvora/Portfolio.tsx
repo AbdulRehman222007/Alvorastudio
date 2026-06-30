@@ -3,6 +3,8 @@ import swrvDesktop from "@/assets/work-swrv-desktop.png";
 import championDesktop from "@/assets/work-champion-desktop.png";
 import swrvMobile from "@/assets/work-swrv-mobile.png";
 import championMobile from "@/assets/work-champion-mobile.png";
+import swrvIgDesktop from "@/assets/swrv-ig-desktop.png";
+import swrvIgMobile from "@/assets/swrv-ig-mobile.png";
 
 const projects = [
   {
@@ -24,7 +26,6 @@ const projects = [
 ];
 
 const socialStats = [
-  { label: "Followers", value: "12.4K" },
   { label: "Avg. Engagement", value: "8.2%" },
   { label: "Monthly Reach", value: "85K+" },
 ];
@@ -86,7 +87,7 @@ export function Portfolio() {
               rel="noopener noreferrer"
               className="group block rounded-3xl overflow-hidden bg-white border border-neutral-200/80 hover:border-neutral-300 transition-all hover:-translate-y-1 hover:shadow-xl"
             >
-              <DeviceMockup desktop={p.desktop} mobile={p.mobile} alt={p.name} />
+              <DeviceMockup desktop={swrvIgDesktop} mobile={swrvIgMobile} alt="SWRV Instagram"/>
               <div className="p-8 flex items-start justify-between gap-6">
                 <div>
                   <p className="text-xs uppercase tracking-[0.2em] text-neutral-500">{p.tag}</p>
@@ -121,23 +122,26 @@ export function Portfolio() {
               rel="noopener noreferrer"
               className="lg:col-span-8 group block rounded-3xl overflow-hidden bg-white border border-neutral-200/80 hover:border-neutral-300 transition-all hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="relative w-full aspect-[16/9] bg-gradient-to-br from-neutral-100 to-neutral-200 overflow-hidden">
-                {/* Instagram feed mockup */}
-                <div className="absolute inset-0 flex items-center justify-center p-8">
-                  <div className="w-full max-w-2xl grid grid-cols-3 gap-2">
-                    {[1, 2, 3, 4, 5, 6].map((i) => (
-                      <div key={i} className="aspect-square bg-neutral-300/50 rounded-lg overflow-hidden">
-                        <div className="w-full h-full bg-gradient-to-br from-neutral-200 to-neutral-300" />
-                      </div>
-                    ))}
-                  </div>
+              <div className="relative w-full aspect-[16/9] bg-neutral-100 overflow-hidden">
+                {/* Browser chrome */}
+                <div className="absolute top-0 left-0 right-0 flex items-center gap-1.5 px-3 py-2 bg-neutral-100 border-b border-neutral-200 z-10">
+                  <span className="h-2.5 w-2.5 rounded-full bg-red-400/80" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/80" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-green-400/80" />
+                  <span className="ml-3 text-[10px] text-neutral-400 font-mono">instagram.com/swrv.pk</span>
                 </div>
-                {/* Floating phone preview */}
-                <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 w-[18%] max-w-[120px] aspect-[9/19] rounded-[1.5rem] border-[6px] border-neutral-900 bg-neutral-900 shadow-2xl overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-b from-neutral-800 to-neutral-900 flex items-center justify-center">
-                    <Instagram className="h-8 w-8 text-white/80" />
-                  </div>
+                {/* Replace with your screenshot */}
+                <div className="w-full h-full bg-gradient-to-br from-neutral-200 to-neutral-300 flex items-center justify-center pt-9">
+                  <span className="text-neutral-400 text-sm">Add screenshot: swrv-instagram-profile.png</span>
                 </div>
+                {/* 
+                <img
+                  src={swrvProfile}
+                  alt="@swrv.pk Instagram profile"
+                  loading="lazy"
+                  className="w-full h-full object-cover object-top pt-9"
+                />
+                */}
               </div>
               <div className="p-8 flex items-start justify-between gap-6">
                 <div>
