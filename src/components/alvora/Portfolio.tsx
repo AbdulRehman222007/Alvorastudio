@@ -72,7 +72,7 @@ export function Portfolio() {
             </h2>
           </div>
           <p className="max-w-md text-neutral-600">
-            Two recent launches — both shipped end-to-end from brand to storefront.
+            Two recent launches both shipped end-to-end from brand to storefront.
           </p>
         </div>
 
@@ -107,7 +107,7 @@ export function Portfolio() {
               </h2>
             </div>
             <p className="max-w-md text-neutral-600">
-              End-to-end social media management — strategy, content creation, and community building.
+              End-to-end social media management, strategy, content creation, and community building.
             </p>
           </div>
 
@@ -130,7 +130,7 @@ export function Portfolio() {
                   </div>
                   <h3 className="mt-3 font-playfair text-3xl">SWRV Attire Social</h3>
                   <p className="mt-3 text-neutral-600 max-w-lg">
-                    Complete social media management for SWRV Attire — from content strategy and visual direction to daily posting and community engagement. Built a cohesive brand voice that resonates with the streetwear audience.
+                    Complete social media management for SWRV Attire from content strategy and visual direction to daily posting and community engagement. Built a cohesive brand voice that resonates with the streetwear audience.
                   </p>
                 </div>
                 <ArrowUpRight className="h-6 w-6 shrink-0 text-neutral-900 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
